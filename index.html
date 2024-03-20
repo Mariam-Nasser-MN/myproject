@@ -3,12 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shapes</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <h2>This is mariam branch</h2>
+    <section id="one">
+        <nav>
+            <br>
+            <a href="#two">Triangle</a>
+            <a href="#three">Rectangle</a>
+            <a href="#four">Square</a>
+            <a href="#five">Parallelogram</a>
+            <a href="#six">Trapezium</a>
+            <a href="#one">Circle</a>
+        </nav>
+        <div id="circle">
+            <center><img src="imgs/circle.png" alt="circle"></center>
+            <h4><li>Enter the redius:</li></h4><input type="text" name="" id="pcircle" class="Text">
+            <center><button onclick="document.getElementById('PC').innerText = ( document.getElementById('pcircle').value) * 2 * 3.14"> Perimeter </button>
+            <button onclick="document.getElementById('AC').innerText = ( document.getElementById('pcircle').value) * ( document.getElementById('pcircle').value) * 3.14"> Area </button></center>
+            <center><p id="PC"></p> <p id="AC"></p></center>
+
+        </div>
+    </section>
+    <section id="two">
+        <div id="triangle">
+            <center><img src="imgs/triangle.png" alt="triangle"></center>
+        <ul>
+            <h4><li>Enter the Base : &emsp14;</li></h4>&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;<input type="text" name="" id="ptriangle1" class="Text"><br>
+            <h4><li>Enter the 1st Side :</li></h4>&emsp14;&emsp14;<input type="text" name="" id="ptriangle2" class="Text"><br>
+            <h4><li>Enter the 2nd Side :&emsp14;</li></h4><input type="text" name="" id="ptriangle3" class="Text"><br>
+            <h4><li>Enter the height : &emsp14;</li></h4>&emsp14;&emsp14;&emsp14;&emsp14;<input type="text" name="" id="ptriangle4" class="Text">
+        </ul>
+            <center><button onclick=" document.getElementById('PTri').innerText = parseInt(document.getElementById('ptriangle1').value) + parseInt(document.getElementById('ptriangle2').value) + parseInt(document.getElementById('ptriangle3').value)"> Perimeter </button>
+                <button onclick=" document.getElementById('ATri').innerText = 1/2 * (document.getElementById('ptriangle1').value * document.getElementById('ptriangle4').value)"> Area </button></center>
+                <center><p id="PTri"></p> <p id="ATri"></p></center>
+
+        </div>
+    </section>
+    <section id="three">
+        <div id="rectangle">
+            <center><img src="imgs/rectangle.png" alt="rectangle"></center>
+            <h4><li>Enter the lenght :</li></h4><input type="text" name="" id="prectangle1" class="Text"><br>
+            <h4><li>Enter the width :&emsp13;</li></h4><input type="text" name="" id="prectangle2" class="Text">
+            <center><button onclick=" document.getElementById('PR').innerText = 2 * ( parseInt(document.getElementById('prectangle1').value) + parseInt(document.getElementById('prectangle2').value) )"> Perimeter </button>
+                <button onclick=" document.getElementById('AR').innerText = document.getElementById('prectangle1').value * document.getElementById('prectangle2').value "> Area </button></center>
+                <center><p id="PR"></p> <p id="AR"></p></center>
+        </div>
+    </section>
+    <section id="four">
+        <div id="square">
+            <center><img src="imgs/square.png" alt="triangle" id="square"></center>
+            <h4><li>Enter the length:</li></h4><input type="text" name="" id="psquare" class="Text"><br>
+            <center><button onclick=" document.getElementById('PS').innerText = 4 * document.getElementById('psquare').value"> Perimeter </button>
+                <button onclick=" document.getElementById('AS').innerText = document.getElementById('psquare').value * document.getElementById('psquare').value"> Area </button></center>
+                <center><p id="PS"></p> <p id="AS"></p></center>
+        </div>
+    </section>
+    <section id="five">
+        <div id="parallelogram">
+            <center><img src="imgs/parallelogram.png" alt="parallelogram"></center>
+            <h4><li>Enter the Base :&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</li></h4><input type="text" name="" id="pparallelogram1" class="Text"><br>
+            <h4><li>Enter the Side length :</li></h4><input type="text" name="" id="pparallelogram2" class="Text">
+            <h4><li>Enter the height :&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</li></h4><input type="text" name="" id="pparallelogram3" class="Text">
+            <center><button onclick=" document.getElementById('PP').innerText = 2 * ( parseInt(document.getElementById('pparallelogram1').value) + parseInt(document.getElementById('pparallelogram2').value) )"> Perimeter </button>
+                <button onclick=" document.getElementById('AP').innerText = ( document.getElementById('pparallelogram1').value * document.getElementById('pparallelogram3').value )"> Area </button></center>
+                <center><p id="PP"></p> <p id="AP"></p></center>
+        </div>
+    </section>
+    <section id="six">
+        <div id="trapezium">
+            <center><img src="imgs/trapezium.png" alt="trapezium"></center>
+            <h4><li>Enter the 1st Base : &emsp13;</li></h4><input type="text" name="" id="ptrpezium1" class="Text"><br>
+            <h4><li>Enter the 2nd Base :&emsp13;&emsp13;</li></h4><input type="text" name="" id="ptrpezium2" class="Text"><br>
+            <h4><li>Enter the 1st Side :&emsp13;&emsp14;&emsp13;</li></h4><input type="text" name="" id="ptrpezium3" class="Text"><br>
+            <h4><li>Enter the 2nd Side :&emsp14;&emsp13;&emsp13;</li></h4><input type="text" name="" id="ptrpezium4" class="Text"><br>
+            <h4><li>Enter the height : &emsp14;&emsp13;&emsp13;&emsp13;&emsp13;</li></h4><input type="text" name="" id="ptrpezium5" class="Text">
+            <center><button onclick=" document.getElementById('PTra').innerText = ( parseInt(document.getElementById('ptrpezium1').value) + parseInt(document.getElementById('ptrpezium2').value) + parseInt(document.getElementById('ptrpezium3').value) + parseInt(document.getElementById('ptrpezium4').value) )"> Perimeter </button>
+                <button onclick="document.getElementById('ATra').innerText = ( (parseInt(document.getElementById('ptrpezium1').value) + parseInt(document.getElementById('ptrpezium2').value)) / 2 ) * document.getElementById('ptrpezium5').value"> Area </button></center>
+                <center><p id="PTra"></p> <p id="ATra"></p></center>
+        </div>
+    </section>
+        
+    
 </body>
 </html>
